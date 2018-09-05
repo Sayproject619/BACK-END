@@ -1,4 +1,4 @@
-# say-api-server 
+# GRAPHQL BACK-END  
 
 Install Node.js sur https://nodejs.org/en/download/ 
 
@@ -12,7 +12,6 @@ Clone or download github project /
 
 Install Nodemon (with administrator rights) by :  npm install -g nodemon
 
-Run the command : nodemon server.js
 
 Download mysql workbench 
 
@@ -27,7 +26,13 @@ Modify your config.json by writing your db adresse
 
 Create the class  : 
 
-1) sequelize model:create --attributes "email:string username:string password:string bio:string isAdmin:boolean" --name User
+1) sequelize model:create --attributes "email:string name:string surname:string password:string profile:integer" --name User
+
+   sequelize model:create --attributes "name:string" --name Profile
+   
+   sequelize model:create --attributes "name:string description:string write:boolean read:boolean" --name Permission
+   
+   sequelize model:create --attributes "profile:integer permission:integer" --name rel_profile_permission
 
 2) Create the db
 
@@ -35,6 +40,36 @@ Create the class  :
 
 4) Go to workbench, database => reverse engineer => Click Execute
 
+5) Run the command : nodemon server.js
+
+6) Go to http://localhost:4000/graphql/users 
+   
+   a) create a profile: 
+   Ex :
+   mutation
+    {
+      createProfile(name:"Manager")
+    }
+   
+   b) register an user 
+   Ex :
+   mutation
+    {
+  register(surname:"Antoni",name:"Tita",email:"619@test.fr",password:"Tita619",profile:1) {
+    id
+    }
+    }
+   
+   c) login
+   Ex : 
+   mutation
+    {
+  login(email:"619@test.fr",password:"Tita619")
+    }
+
+7) Go to postman or test the query "me" after login with token
+
+Others informations:
 
 When you want to modify your db, you can create a migration:
 Command line : sequelize migration:create --name modif
