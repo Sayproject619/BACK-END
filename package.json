@@ -1,7 +1,7 @@
 {
-  "name": "say-api",
+  "name": "say-graphql",
   "version": "1.0.0",
-  "description": "Serveur HTTP pour API REST",
+  "description": "Serveur HTTP pour GraphQl",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
