@@ -42,14 +42,14 @@ Create the class  :
 6) Go to http://localhost:4000/graphql/users 
    
    a) create a profile: 
-   Exemple :
+   Ex :
    mutation
     {
       createProfile(name:"Manager")
     }
    
    b) register an user 
-   Exemple :
+   Ex :
    mutation
     {
   register(surname:"Antoni",name:"Tita",email:"619@test.fr",password:"Tita619",profile:1) {
@@ -58,13 +58,13 @@ Create the class  :
     }
    
    c) login
-   Exemple: 
+   Ex : 
    mutation
     {
   login(email:"619@test.fr",password:"Tita619")
     }
 
-7) Go to postman or test the query me with login
+7) Go to postman or test the query "me" after login with token
 
 Others informations:
 
