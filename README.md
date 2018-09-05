@@ -61,7 +61,7 @@ Create the class  :
    Exemple: 
    mutation
     {
-  login(email:"rat619@test.fr",password:"tita619")
+  login(email:"619@test.fr",password:"Tita619")
     }
 
 7) Go to postman or test the query me with login
