@@ -27,8 +27,11 @@ Modify your config.json by writing your db adresse
 Create the class  : 
 
 1) sequelize model:create --attributes "email:string name:string surname:string password:string profile:integer" --name User
+
    sequelize model:create --attributes "name:string" --name Profile
+   
    sequelize model:create --attributes "name:string description:string write:boolean read:boolean" --name Permission
+   
    sequelize model:create --attributes "profile:integer permission:integer" --name rel_profile_permission
 
 2) Create the db
