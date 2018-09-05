@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "say_db",
+    "password": "Say619",
+    "database": "say_db_dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "say_db",
+    "password": "Say619",
+    "database": "say_db_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "say_db",
+    "password": "Say619",
+    "database": "say_db_prod",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

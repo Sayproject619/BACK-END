@@ -1,0 +1,29 @@
+{
+  "name": "say-api",
+  "version": "1.0.0",
+  "description": "Serveur HTTP pour API REST",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "http",
+    "graphql"
+  ],
+  "author": "Thierry Antoni",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "express-jwt": "^5.3.1",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.0.5",
+    "jsonwebtoken": "^8.3.0",
+    "mysql": "^2.16.0",
+    "sequelize": "^3.30.4"
+  }
+}
