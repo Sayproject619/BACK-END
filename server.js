@@ -1,5 +1,6 @@
 // Imports
 var express     = require('express');
+var cors     = require('cors');
 var bodyParser  = require('body-parser');
 var graphqlHTTP = require('express-graphql');
 var expressjwt = require('express-jwt');
@@ -39,6 +40,7 @@ const auth = expressjwt({
 
 server.use(
     '/graphql/users',
+    cors(),
     bodyParser.json(),
     auth, 
     graphqlHTTP(req => ({
